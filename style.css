@@ -1,0 +1,117 @@
+*,*:after,*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin: 0;
+        background-image: linear-gradient(80deg, rgb(5, 124, 172), rgb(199, 10, 114));
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        overflow: hidden;
+        color: #000;
+        border: #000;
+    }
+    #up{
+        position: absolute;
+        height: 800px;
+        width: 800px;
+        border-radius: 50%;
+        background-image: linear-gradient(80deg, rgb(5, 124, 172), rgb(43, 247, 202, 0.5));
+        filter: blur(80px);
+        animation: down 40s infinite;
+    }
+    #down{
+        position: absolute;
+        right: 0;
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        background-image: linear-gradient(80deg, rgba(245, 207, 82, 0.8), rgba(199, 10, 114));
+        filter: blur(80px);
+        animation: up 30s infinite;
+    }
+    #left{
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        background-image: linear-gradient(80deg, rgb(5, 124, 172), rgba(183, 253, 52, 0.8));
+        filter: blur(80px);
+        animation: left 30s 1s infinite;
+    }
+    #right{
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        background-image: linear-gradient(80deg, rgb(26, 248, 18, 0.6), rgba(199, 10, 52, 0.8));
+        filter: blur(80px);
+        animation: right 40s .5s infinite;
+    }
+    
+    @keyframes down{
+        0%, 100%{
+            top: -100px;
+        }
+        70%{
+            top: 700px;
+        }
+    }
+    @keyframes up{
+        0%, 100%{
+            bottom: -100px;
+        }
+        70%{
+            bottom: 700px;
+        }
+    }
+    @keyframes left{
+        0%, 100%{
+            left: -100px;
+        }
+        70%{
+            left: 1300px;
+        }
+    }
+    @keyframes right{
+        0%, 100%{
+            right: -100px;
+        }
+        70%{
+            right: 1300px;
+        }
+    }
+    .voice_to_text{
+        width: 600px;
+        text-align: center;
+    }
+    #convert_text{
+        width: 100%;
+        position: relative;
+        height: 200px;
+        border-radius: 10px;
+        resize: none;
+        padding: 10px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    h1{
+        font-size: 50px;
+        position: relative;
+        color: #fff;
+    }
+    button{
+        padding: 12px 20px;
+        position: relative;
+        background: #0ea4da;
+        border: 0;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #fff;
+    }
